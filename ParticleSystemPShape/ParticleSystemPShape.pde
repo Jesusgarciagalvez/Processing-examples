@@ -20,27 +20,21 @@ void setup() {
   // artifacts due to the fact that the particles are semi-transparent
   // but not z-sorted.
   hint(DISABLE_DEPTH_MASK);
-    
+
 } 
 
 void draw () {
-  UpdateParticles();
- 
-                                                                     
-
-}
-
-void mouseClicked() {
-   // Set the particle system's emitter location to the mouse   
-   ps.setEmitter(mouseX,mouseY);
-}
-
-void UpdateParticles(){
-  background(255); //clear the background
-  ps.update(); // Update and display system
+  background(0);
+  // Update and display system
+  ps.update();
   ps.display();
-  fill(0); // Display frame rate
+  
+  // Set the particle system's emitter location to the mouse
+  ps.setEmitter(mouseX,mouseY);
+  
+  // Display frame rate
+  fill(255);
   textSize(16);
   text("Frame rate: " + int(frameRate),10,20);
+  
 }
-

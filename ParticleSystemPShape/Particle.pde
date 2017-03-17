@@ -72,8 +72,8 @@ class Particle {
     // Decrease life
     lifespan = lifespan - 1;
     // Apply gravity
-    //velocity.add(gravity);
-    part.setTint(color(0, lifespan));
+    ////////////////////////////////////velocity.add(gravity);
+    part.setTint(color(255, lifespan));
     // Move the particle according to its velocity
     part.translate(velocity.x, velocity.y);
     // and also update the center

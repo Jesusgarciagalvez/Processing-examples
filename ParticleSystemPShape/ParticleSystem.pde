@@ -40,4 +40,3 @@ class ParticleSystem {
     shape(particleShape);
   }
 }
-
